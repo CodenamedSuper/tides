@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "tides:block/urchin_bottom",
+    "east": "tides:block/urchin",
+    "north": "tides:block/urchin",
+    "particle": "tides:block/urchin",
+    "south": "tides:block/urchin",
+    "up": "tides:block/urchin_top",
+    "west": "tides:block/urchin"
+  }
+}

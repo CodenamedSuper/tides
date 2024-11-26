@@ -1,0 +1,11 @@
+{
+  "type": "tides:colony_anemone",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "tides:anemone"
+      }
+    }
+  }
+}

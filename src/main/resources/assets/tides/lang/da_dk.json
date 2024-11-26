@@ -1,0 +1,35 @@
+{
+  "block.tides.shorestone": "Kyststen",
+  "block.tides.pebblestone": "Småsten",
+  "block.tides.urchin": "Urkin",
+  "block.tides.urchin_spines": "Urkin Rygge",
+  "block.tides.anemone": "Anemone",
+  "block.tides.anemone_tentacles": "Anemone Tentakler",
+  "block.tides.sponge_tubes": "Svampe rør",
+  "block.tides.clam": "Musling",
+  
+  "item.tides.pearl": "Perle",
+
+  "item.tides.ocean_stew": "Havgryderet",
+
+  "block.tides.ghost_coral": "Spøgelseskoral",
+  "block.tides.ghost_coral_block": "Spøgelseskoralblok",
+  "block.tides.ghost_coral_fan": "Spøgelseskoralvifte",
+  "block.tides.dead_ghost_coral": "Død spøgelseskoraler",
+  "block.tides.dead_ghost_coral_block": "Død spøgelseskoralblok",
+  "block.tides.dead_ghost_coral_fan": "Død spøgelseskoralvifte",
+
+  "block.tides.leaf_coral": "Bladkoral",
+  "block.tides.leaf_coral_block": "Bladkoralblok",
+  "block.tides.leaf_coral_fan": "Bladkoralvifte",
+  "block.tides.leaf_ghost_coral": "Bladspøgelseskoral",
+  "block.tides.leaf_ghost_coral_block": "Bladspøgelseskoralblok",
+  "block.tides.leaf_ghost_coral_fan": "Bladspøgelseskoralvifte",
+
+  "block.tides.plate_coral": "Tallerkenkoral",
+  "block.tides.plate_coral_block": "Tallerkenkoralblok",
+  "block.tides.plate_coral_fan": "Tallerkenkoralvifte",
+  "block.tides.plate_ghost_coral": "Tallerken Spøgelseskoral",
+  "block.tides.plate_ghost_coral_block": "Tallerken Spøgelseskoralblok",
+  "block.tides.plate_ghost_coral_fan": "Tallerkenkoralvifte"
+}

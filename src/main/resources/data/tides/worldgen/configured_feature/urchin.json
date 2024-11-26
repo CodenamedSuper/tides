@@ -1,0 +1,14 @@
+{
+  "type": "tides:urchin",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "tides:urchin_spines",
+        "Properties": {
+          "waterlogged": "true"
+        }
+      }
+    }
+  }
+}

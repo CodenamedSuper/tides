@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "tides:block/anemone_tentacles",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "tides:block/anemone_tentacles",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tides:block/anemone_tentacles",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "tides:block/anemone_tentacles",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "tides:block/anemone_tentacles"
+    },
+    "facing=west": {
+      "model": "tides:block/anemone_tentacles",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

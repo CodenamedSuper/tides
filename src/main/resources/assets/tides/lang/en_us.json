@@ -1,0 +1,29 @@
+{
+  "block.tides.shorestone": "Shorestone",
+  "block.tides.pebblestone": "Pebblestone",
+  "block.tides.urchin": "Urchin",
+  "block.tides.urchin_spines": "Urchin Spines",
+  "block.tides.anemone": "Anemone",
+  "block.tides.anemone_tentacles": "Anemone Tentacles",
+  "block.tides.sponge_tubes": "Sponge Tubes",
+  "block.tides.clam": "Clam",
+  
+  "item.tides.pearl": "Pearl",
+
+  "item.tides.ocean_stew": "Ocean Stew",
+
+
+  "block.tides.leaf_coral": "Leaf Coral",
+  "block.tides.leaf_coral_block": "Leaf Coral Block",
+  "block.tides.leaf_coral_fan": "Dead Coral Fan",
+  "block.tides.dead_leaf_coral": "Dead Leaf Coral",
+  "block.tides.dead_leaf_coral_block": "Dead Leaf Coral Block",
+  "block.tides.dead_leaf_coral_fan": "Dead Leaf Coral Fan",
+
+  "block.tides.plate_coral": "Plate Coral",
+  "block.tides.plate_coral_block": "Plate Coral Block",
+  "block.tides.plate_coral_fan": "Plate Coral Fan",
+  "block.tides.dead_plate_coral": "Dead Plate Coral",
+  "block.tides.dead_plate_coral_block": "Dead Plate Coral Block",
+  "block.tides.dead_plate_coral_fan": "Dead Plate Coral Fan"
+}

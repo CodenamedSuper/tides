@@ -1,0 +1,14 @@
+{
+  "type": "tides:sponge",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "tides:sponge_tubes"
+      },
+      "Properties": {
+        "waterlogged": "true"
+      }
+    }
+  }
+}

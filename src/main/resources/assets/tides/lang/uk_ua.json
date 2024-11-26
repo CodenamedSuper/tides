@@ -1,0 +1,35 @@
+{
+  "block.tides.shorestone": "Береговий камінь",
+  "block.tides.pebblestone": "Галька",
+  "block.tides.urchin": "Морський їжак",
+  "block.tides.urchin_spines": "Колючки морського їжака",
+  "block.tides.anemone": "Анемона",
+  "block.tides.anemone_tentacles": "Мацаки анемони",
+  "block.tides.sponge_tubes": "Губкові трубки",
+  "block.tides.clam": "Устриця",
+
+  "item.tides.pearl": "Перлина",
+
+  "item.tides.ocean_stew": "Океанічне рагу",
+
+  "block.tides.ghost_coral": "Примарний корал",
+  "block.tides.ghost_coral_block": "Блок примарних коралів",
+  "block.tides.ghost_coral_fan": "Віяло з примарних коралів",
+  "block.tides.dead_ghost_coral": "Мертвий примарний корал",
+  "block.tides.dead_ghost_coral_block": "Блок мертвих примарних коралів",
+  "block.tides.dead_ghost_coral_fan": "Віяло з мертвих примарних коралів",
+
+  "block.tides.leaf_coral": "Листяний корал",
+  "block.tides.leaf_coral_block": "Блок листяних коралів",
+  "block.tides.leaf_coral_fan": "Віяло з листяних коралів",
+  "block.tides.leaf_ghost_coral": "Листяний примарний корал",
+  "block.tides.leaf_ghost_coral_block": "Блок листяних примарних коралів",
+  "block.tides.leaf_ghost_coral_fan": "Віяло з листяних примарних коралів",
+
+  "block.tides.plate_coral": "Пластинчатий корал",
+  "block.tides.plate_coral_block": "Блок пластинчатих коралів",
+  "block.tides.plate_coral_fan": "Віяло з пластинчатих коралів",
+  "block.tides.plate_ghost_coral": "Пластинчатий примарний корал",
+  "block.tides.plate_ghost_coral_block": "Блок пластинчатих примарних коралів",
+  "block.tides.plate_ghost_coral_fan": "Віяло з пластинчатих примарних коралів"
+}

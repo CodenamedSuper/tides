@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:kelp"
+    },
+    {
+      "item": "tides:urchin_spines"
+    },
+    {
+      "item": "tides:urchin_spines"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tides:ocean_stew"
+  }
+}

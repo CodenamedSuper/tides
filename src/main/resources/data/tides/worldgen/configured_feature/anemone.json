@@ -1,0 +1,14 @@
+{
+  "type": "tides:anemone",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "tides:anemone_tentacles"
+      },
+      "Properties": {
+        "waterlogged": "true"
+      }
+    }
+  }
+}

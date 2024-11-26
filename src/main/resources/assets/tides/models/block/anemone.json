@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "tides:block/anemone_bottom",
+    "east": "tides:block/anemone",
+    "north": "tides:block/anemone",
+    "particle": "tides:block/anemone",
+    "south": "tides:block/anemone",
+    "up": "tides:block/anemone_top",
+    "west": "tides:block/anemone"
+  }
+}

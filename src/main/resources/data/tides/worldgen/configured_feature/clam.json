@@ -1,0 +1,14 @@
+{
+  "type": "tides:clam",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "tides:clam"
+      },
+      "Properties": {
+        "waterlogged": "true"
+      }
+    }
+  }
+}

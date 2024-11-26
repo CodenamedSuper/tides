@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "tides:block/anemone_tentacles"
+  }
+}

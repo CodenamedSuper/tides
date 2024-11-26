@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tides",
+	"version": "${version}",
+	"name": "Tides",
+	"description": "Simple aquatic additions to Minecraft!",
+	"authors": [
+		"CodenamedSuper and FishyGoose"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/tides",
+		"sources": "https://github.com/CodenamedSuper/Tides"
+	},
+	"license": "MIT",
+	"icon": "assets/tides/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"codenamed.tides.Tides"
+		],
+		"fabric-datagen": [
+			"codenamed.tides.TidesDataGenerator"
+		],
+		"client": [
+			"codenamed.tides.TidesClient"
+		]
+	},
+	"mixins": [
+		"tides.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

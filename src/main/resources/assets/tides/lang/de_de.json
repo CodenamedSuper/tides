@@ -1,0 +1,35 @@
+{
+    "block.tides.shorestone": "Uferstein",
+    "block.tides.pebblestone": "Kieselstein",
+    "block.tides.urchin": "Seeigel",
+    "block.tides.urchin_spines": "Seeigel Stacheln",
+    "block.tides.anemone": "Anemone",
+    "block.tides.anemone_tentacles": "Anemone Tentakel",
+    "block.tides.sponge_tubes": "Schwamm Röhre",
+    "block.tides.clam": "Muschel",
+  
+    "item.tides.pearl": "Perle",
+  
+    "item.tides.ocean_stew": "Ozean Eintopf",
+  
+    "block.tides.ghost_coral": "Gespensterkorallen",
+    "block.tides.ghost_coral_block": "Gespensterkorallenblock",
+    "block.tides.ghost_coral_fan": "Gespensterkorallenfächer",
+    "block.tides.dead_ghost_coral": "Abgestorbene Gespensterkorallen",
+    "block.tides.dead_ghost_coral_block": "Abgestorbener Gespensterkorallenblock",
+    "block.tides.dead_ghost_coral_fan": "Abgestorbener Gespensterkorallenfächer",
+  
+    "block.tides.leaf_coral": "Blattkorallen",
+    "block.tides.leaf_coral_block": "Blattkorallenblock",
+    "block.tides.leaf_coral_fan": "Blattkorallenfächer",
+    "block.tides.leaf_ghost_coral": "Blattgespensterkorallen",
+    "block.tides.leaf_ghost_coral_block": "Blattgespensterkorallenblock",
+    "block.tides.leaf_ghost_coral_fan": "Blattgespensterkorallenfächer",
+  
+    "block.tides.plate_coral": "Tafelkorallen",
+    "block.tides.plate_coral_block": "Tafelkorallenblock",
+    "block.tides.plate_coral_fan": "Tafelkorallenfächer",
+    "block.tides.plate_ghost_coral": "Tafelgespensterkorallen",
+    "block.tides.plate_ghost_coral_block": "Tafelgespensterkorallenblock",
+    "block.tides.plate_ghost_coral_fan": "Tafelgespensterkorallenfächer"
+  }

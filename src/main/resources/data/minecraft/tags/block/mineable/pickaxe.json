@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "tides:shorestone",
+    "tides:pebblestone",
+    "tides:urchin",
+    "tides:urchin_spines",
+    "tides:anemone",
+    "tides:anemone_tentacles",
+    "tides:sponge_tubes",
+    "tides:clam",
+
+    "tides:plate_coral_block",
+    "tides:dead_plate_coral_block",
+    "tides:leaf_coral_block",
+    "tides:dead_leaf_coral_block",
+
+    "tides:plate_coral_fan",
+    "tides:dead_plate_coral_fan",
+    "tides:leaf_coral_fan",
+    "tides:dead_leaf_coral_fan",
+
+    "tides:plate_coral_wall_fan",
+    "tides:dead_plate_coral_wall_fan",
+    "tides:leaf_coral_wall_fan",
+    "tides:dead_leaf_coral_wall_fan"
+  ]
+}
