@@ -1,5 +1,6 @@
 package codenamed.tides.block.custom;
 
+import codenamed.tides.registry.TidesEntityTypeTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -16,7 +17,7 @@ public class UrchinSpinesBlock extends MarinalOrganBlock {
 
     @Override
     protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if (entity instanceof LivingEntity livingEntity) {
+        if (entity instanceof LivingEntity livingEntity && !livingEntity.getType().isIn(TidesEntityTypeTags.IMMUNE_TO_URCHIN)) {
             livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 120, 0));
             livingEntity.damage(world.getDamageSources().sweetBerryBush(), 1.0f);
         }

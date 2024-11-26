@@ -34,13 +34,14 @@ public class Tides implements ModInitializer {
 		LOGGER.info(MOD_ID);
 
 
-		TidesBlocks.registerModBlocks();
-		TidesItems.registerModItems();
-		TidesBlockEntityType.registerBlockEntities();
-		TidesItemGroup.registerItemGroups();
-		TidesFeature.registerFeatures();
-		TidesPlacedFeatures.registerPlacedFeatures();
-		TidesBiomeKeys.registerBiomeKeys();
+		TidesBlocks.init();
+		TidesItems.init();
+		TidesBlockEntityType.init();
+		TidesItemGroup.init();
+		TidesFeature.init();
+		TidesPlacedFeatures.init();
+		TidesBiomeKeys.init();
+		TidesEntityTypeTags.init();
 
 
 

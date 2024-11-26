@@ -18,7 +18,5 @@ public class TidesItems {
 
 
 
-    public static void registerModItems() {
-        Tides.LOGGER.info("Registering items for " + Tides.MOD_ID);
-    }
+    public static void init() { }
 }

@@ -16,7 +16,5 @@ public class TidesBiomeKeys {
         return RegistryKey.of(RegistryKeys.BIOME, Identifier.of(Tides.MOD_ID, name));
     }
 
-    public  static  void  registerBiomeKeys() {
-
-    }
+    public  static  void  init() { }
 }

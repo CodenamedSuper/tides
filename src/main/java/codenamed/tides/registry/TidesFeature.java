@@ -32,7 +32,5 @@ public abstract class TidesFeature<FC extends FeatureConfig> {
         return Registry.register(Registries.FEATURE, Identifier.of(Tides.MOD_ID, name), feature);
     }
 
-    public  static  void  registerFeatures() {
-
-    }
+    public  static  void  init() { }
 }

@@ -125,7 +125,5 @@ public class TidesBlocks {
         return Registry.register(Registries.BLOCK, Identifier.of(Tides.MOD_ID, name), block);
     }
 
-    public static void registerModBlocks() {
-        Tides.LOGGER.info("Registering Blocks for " + Tides.MOD_ID);
-    }
+    public static void init() { }
 }

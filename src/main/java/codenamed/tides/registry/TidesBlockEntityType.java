@@ -59,7 +59,5 @@ public class TidesBlockEntityType {
         T create(BlockPos pos, BlockState state);
     }
 
-    public  static  void registerBlockEntities() {
-        Tides.LOGGER.info("Registering block entities for " + Tides.MOD_ID + "!");
-    }
+    public  static  void init() { }
 }

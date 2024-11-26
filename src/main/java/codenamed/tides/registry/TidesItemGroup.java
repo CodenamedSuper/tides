@@ -43,7 +43,7 @@ public class TidesItemGroup {
 
                     }).build());
 
-    public static void registerItemGroups() {
+    public static void init() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
 
         });
