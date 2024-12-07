@@ -24,6 +24,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
@@ -33,6 +34,9 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClamBlock extends BlockWithEntity implements Waterloggable {
 
@@ -134,9 +138,10 @@ public class ClamBlock extends BlockWithEntity implements Waterloggable {
         if (!state.get(OPEN)) {
             world.setBlockState(pos, state.with(OPEN, true));
             world.playSound((PlayerEntity)null, pos, TidesSoundEvents.CLAM_OPEN, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
-            if (player.getBlockPos().getX() == pos.getX() && player.getBlockPos().getZ() == pos.getZ() && player.getBlockPos().getY() == pos.getY() && !state.get(WATERLOGGED)) {
-                launchEntity(player, pos, world, state);
-            }
+
+                for(Entity entity : getEntitiesOnBlock(world, pos)) {
+                    launchEntity(entity, pos, world, state);
+                }
 
         }
         else {
@@ -146,13 +151,8 @@ public class ClamBlock extends BlockWithEntity implements Waterloggable {
         }
     }
 
-
-
-
-    @Override
-    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if (entity.getBlockPos().getX() == pos.getX() && entity.getBlockPos().getZ() == pos.getZ() && entity.getBlockPos().getY() == pos.getY()) {
-        }
+    public List<Entity> getEntitiesOnBlock(World world, BlockPos pos) {
+        return world.getOtherEntities(null, new Box(pos));
     }
 
     public  void  launchEntity(Entity entity, BlockPos blockPos, World world, BlockState state) {
