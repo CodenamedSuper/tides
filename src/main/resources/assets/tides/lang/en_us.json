@@ -25,5 +25,9 @@
   "block.tides.plate_coral_fan": "Plate Coral Fan",
   "block.tides.dead_plate_coral": "Dead Plate Coral",
   "block.tides.dead_plate_coral_block": "Dead Plate Coral Block",
-  "block.tides.dead_plate_coral_fan": "Dead Plate Coral Fan"
+  "block.tides.dead_plate_coral_fan": "Dead Plate Coral Fan",
+
+  "subtitles.tides.clam_open": "Clam opened",
+  "subtitles.tides.clam_close": "Clam closed"
+
 }

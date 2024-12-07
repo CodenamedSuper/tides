@@ -2,6 +2,7 @@ package codenamed.tides.block.custom;
 
 import codenamed.tides.block.entity.ClamBlockEntity;
 import codenamed.tides.registry.TidesItems;
+import codenamed.tides.registry.TidesSoundEvents;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -12,6 +13,8 @@ import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
@@ -53,7 +56,18 @@ public class ClamBlock extends BlockWithEntity implements Waterloggable {
     @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         if (state.get(OPEN)) {
-            return Block.createCuboidShape(0, 0, 0, 16, 4, 16);
+            if (state.get(FACING) == Direction.NORTH) {
+                return VoxelShapes.combineAndSimplify(Block.createCuboidShape(0, 0, 0, 16, 4, 16), Block.createCuboidShape(0, 4, 16, 16, 20, 20), BooleanBiFunction.OR);
+            }
+            else if (state.get(FACING) == Direction.EAST) {
+                return  VoxelShapes.combineAndSimplify(Block.createCuboidShape(0, 0, 0, 16, 4, 16), Block.createCuboidShape(-4, 4, 0, 0, 20, 16), BooleanBiFunction.OR);
+            }
+            else if (state.get(FACING) == Direction.SOUTH) {
+                return VoxelShapes.combineAndSimplify(Block.createCuboidShape(0, 0, 0, 16, 4, 16), Block.createCuboidShape(0, 4, -4, 16, 20, 0), BooleanBiFunction.OR);
+            }
+            else {
+                return VoxelShapes.combineAndSimplify(Block.createCuboidShape(0, 0, 0, 16, 4, 16), Block.createCuboidShape(16, 4, 0, 20, 20, 16), BooleanBiFunction.OR);
+            }
         }
         else {
             return VoxelShapes.combineAndSimplify(Block.createCuboidShape(0, 0, 0, 16, 4, 16), Block.createCuboidShape(0, 4, 0, 16, 8, 16), BooleanBiFunction.OR);
@@ -119,14 +133,16 @@ public class ClamBlock extends BlockWithEntity implements Waterloggable {
     public  void  cycleOpenedState(BlockState state, World world, BlockPos pos, PlayerEntity player) {
         if (!state.get(OPEN)) {
             world.setBlockState(pos, state.with(OPEN, true));
+            world.playSound((PlayerEntity)null, pos, TidesSoundEvents.CLAM_OPEN, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
             if (player.getBlockPos().getX() == pos.getX() && player.getBlockPos().getZ() == pos.getZ() && player.getBlockPos().getY() == pos.getY() && !state.get(WATERLOGGED)) {
                 launchEntity(player, pos, world, state);
-
             }
 
         }
         else {
+            world.playSound((PlayerEntity)null, pos, TidesSoundEvents.CLAM_CLOSE, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
             world.setBlockState(pos, state.with(OPEN, false));
+
         }
     }
 

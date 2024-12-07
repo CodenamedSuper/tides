@@ -38,6 +38,7 @@ public class Tides implements ModInitializer {
 		TidesItems.init();
 		TidesBlockEntityType.init();
 		TidesItemGroup.init();
+		TidesSoundEvents.init();
 		TidesFeature.init();
 		TidesPlacedFeatures.init();
 		TidesBiomeKeys.init();

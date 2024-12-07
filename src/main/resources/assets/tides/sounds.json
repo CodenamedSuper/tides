@@ -1,0 +1,14 @@
+{
+  "clam_open": {
+    "subtitle": "subtitles.tides.clam_open",
+    "sounds": [
+      "tides:clam_open"
+    ]
+  },
+  "clam_close": {
+    "subtitle": "subtitles.tides.clam_close",
+    "sounds": [
+      "tides:clam_close"
+    ]
+  }
+}
